@@ -34,10 +34,10 @@
 
             <!-- nav menu -->
             <div class="nav-menu">
-                <button>Hello 1</button>
-                <button>Hello 2</button>
-                <button>Hello 3</button>
-                <button>Hello 4</button>
+                <button onclick="showSection('dashboard')">Dashboard</button>
+                <button onclick="showSection('students')">Students</button>
+                <button onclick="showSection('notieces')">Notices</button>
+                <button onclick="showSection('settings')">Settings</button>
             </div>
             <div class="version-info">Version 2.0</div>
         </div>
@@ -52,14 +52,14 @@
                 </div>
                 <div class="notice-board">
                     <h3>Lates Notices</h3>
-                    <div id="dashboardNotices">
+                    <div id="noticesdNotices">
                         <!-- lates notice will be rendered here -->
                     </div>
                 </div>
             </div>
 
             <!-- Students Section -->
-            <div id="studentsSection" class="">
+            <div id="studentsSection" class="hidden">
                 <div class="dashboard-card">
                     <h2>Student Management</h2>
                     <div class="form-group">
@@ -81,7 +81,7 @@
             </div>
 
             <!-- Admit student Section -->
-            <div id="admitSection" class="">
+            <div id="admitSection" class="hidden">
                 <div class="dashboard-card">
                     <h2>Admit New Student</h2>
                     <form action="" id="admitForm" class="form">
@@ -102,7 +102,7 @@
                 </div>
             </div>
             <!-- Notices Section -->
-            <div id="noticesSection" class="">
+            <div id="noticesSection" class="hidden">
                 <div class="dashboard-card">
                     <h2>Create New Notice</h2>
                     <form id="noticeForm" class="form">
@@ -127,7 +127,7 @@
             </div>
 
             <!-- Settings Section -->
-            <div id="settingsSection" class="">
+            <div id="settingsSection" class="hidden">
                 <div class="dashboard-card">
                     <h2>School Settings</h2>
                     <form id="schoolSettings">
@@ -149,6 +149,10 @@
             </div>
         </div>
     </div>
+
+    <!-- script js -->
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
